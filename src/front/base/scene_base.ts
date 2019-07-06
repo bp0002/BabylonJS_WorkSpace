@@ -116,7 +116,7 @@ export interface IModelInstance extends ITransformObj {
     /**
      * 节点/模型 资源文件中模型名称
      */
-    modelName: string;
+    modelName: string | null;
     /**
      * 节点/模型 资源加载成功回调
      */
@@ -143,7 +143,7 @@ export interface IModelOpt {
      * 要加载的模型名称
      * * 美术资源(GLTF) 中定义的模型名称
      */
-    modelName: string;
+    modelName: string | null;
     /**
      * 要加载的模型在所属资源管理路径下的子路径
      * * 资源文件子路径

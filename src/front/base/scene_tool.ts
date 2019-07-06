@@ -80,7 +80,7 @@ export class LoaderTool {
         const sceneImpl = model.scene.scene;
 
         // BABYLON.SceneLoader.Append(`${ResPath}${SceneResPath}${path}`, `${fileName}.scene.gltf`, sceneImpl, model.appened);
-        BABYLON.SceneLoader.AppendAsync(`${path}`, `${fileName}.gltf`, sceneImpl).then(
+        BABYLON.SceneLoader.AppendAsync(`${path}`, `${fileName}`, sceneImpl).then(
             (res) => {
                 model.appened(res);
             }
@@ -93,7 +93,7 @@ export class LoaderTool {
         const modelName = model.modelName;
         const sceneImpl = model.scene.scene;
 
-        BABYLON.SceneLoader.ImportMesh(modelName, `${path}`, `${fileName}.gltf`, sceneImpl, model.loaded);
+        BABYLON.SceneLoader.ImportMesh(modelName, `${path}`, `${fileName}`, sceneImpl, model.loaded);
     }
     public static loadEffect(model: InsertModelObj) {
         const name = model.name;
@@ -102,6 +102,6 @@ export class LoaderTool {
         const modelName = model.modelName;
         const sceneImpl = model.scene.scene;
 
-        BABYLON.SceneLoader.ImportMesh(modelName, `${path}`, `${fileName}.gltf`, sceneImpl, model.loaded);
+        BABYLON.SceneLoader.ImportMesh(modelName, `${path}`, `${fileName}`, sceneImpl, model.loaded);
     }
 }

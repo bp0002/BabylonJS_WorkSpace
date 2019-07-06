@@ -1,5 +1,6 @@
 import { EngineInstance } from "../../base/engine_instance";
 import { SceneInstance3D, SceneInstance } from "../../base/scene_instance";
+import { AppendModelObj, InsertModelObj } from "../../base/model_instance";
 
 /**
  * 功能模块
@@ -48,6 +49,26 @@ export class Index {
         ground.position.y = 0.1;
 
         // var sceneIn = new BABYLON.SceneInstrumentation(this.scene.scene);
+
+        const model = this.scene.insertMesh('bee', {
+            rayID: 1,
+            modelName: null,
+            path: '../../resource/model/Bee/',
+            /**
+             * 要加载的模型的资源文件名称
+             * * 资源文件名称
+             */
+            fileName: 'Bee.babylon',
+            /**
+             * 加载成功的回调
+             */
+            insertedCall: (model: InsertModelObj) => {
+                console.warn(`Insert Scuccess.`);
+                this.scene.activeCamera = camera;
+            }
+        });
+
+        model.setPostion([0, 0.1, 0.1]);
     }
     public static createEngine(canvas: HTMLCanvasElement) {
         return new BABYLON.Engine(canvas, true);

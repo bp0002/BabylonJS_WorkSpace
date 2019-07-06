@@ -27,7 +27,7 @@ export class AppendModelObj implements IModelInstance {
      * 要导入的文件内的指定模型名称
      * * 为 '' 则表示导入目标文件中所有模型
      */
-    public readonly modelName: string;
+    public readonly modelName: string | null;
     /**
      * 导入成功后的调用
      */
@@ -124,7 +124,7 @@ export class InsertModelObj implements IModelInstance {
     public readonly name: string;
     public readonly path: string;
     public readonly fileName: string;
-    public readonly modelName: string;
+    public readonly modelName: string | null;
     public insertedCall: ((model: InsertModelObj) => any) | undefined;
     public readonly meshMap: Map<string, BABYLON.Mesh> = new Map();
     public readonly skeletonMap: Map<string, BABYLON.Skeleton> = new Map();
