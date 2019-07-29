@@ -26,7 +26,7 @@ export class Index {
         // 创建场景
         this.scene  = this.engine.createScene3D('test');
 
-        const camera = new BABYLON.FreeCamera('camera1', new BABYLON.Vector3(0, 5, -10), this.scene.scene);
+        const camera = new BABYLON.TargetCamera('camera1', new BABYLON.Vector3(0, 5, -10), this.scene.scene);
         camera.setTarget(BABYLON.Vector3.Zero());
         camera.attachControl(canvas, true);
         // 添加相机
@@ -40,35 +40,42 @@ export class Index {
         const light = new BABYLON.HemisphericLight('light1', new BABYLON.Vector3(0, 1, 0), this.scene.scene);
         this.scene.addLight('light1', light);
 
-        // 添加球体
-        const sphere = BABYLON.Mesh.CreateSphere('sphere1', 16, 2, this.scene.scene);
-        sphere.position.y = 1;
+        // // 添加球体
+        // const sphere = BABYLON.Mesh.CreateSphere('sphere1', 16, 2, this.scene.scene);
+        // sphere.position.y = 1;
 
-        // 添加平面
-        const ground = BABYLON.Mesh.CreateGround('ground1', 6, 6, 2, this.scene.scene);
-        ground.position.y = 0.1;
+        // // 添加平面
+        // const ground = BABYLON.Mesh.CreateGround('ground1', 6, 6, 2, this.scene.scene);
+        // ground.position.y = 0.1;
 
         // var sceneIn = new BABYLON.SceneInstrumentation(this.scene.scene);
 
-        const model = this.scene.insertMesh('bee', {
+        const model = this.scene.insertMesh('buster_drone', {
             rayID: 1,
             modelName: null,
-            path: '../../resource/model/Bee/',
+            path: '../../resource/model/buster_drone/',
             /**
              * 要加载的模型的资源文件名称
              * * 资源文件名称
              */
-            fileName: 'Bee.babylon',
+            fileName: 'scene.gltf',
             /**
              * 加载成功的回调
              */
             insertedCall: (model: InsertModelObj) => {
                 console.warn(`Insert Scuccess.`);
-                this.scene.activeCamera = camera;
+                // this.scene.activeCamera = camera;
+                let span = document.createElement('a');
+                document.body.appendChild(span);
+                span.innerText = `GLTF Model From: LaVADraGoN's <Buster Drone>` ;
+                span.style.cssText = 'position:absolute;height:24px;color:red;z-index:10000000;';
+                span.href = 'https://sketchfab.com/3d-models/buster-drone-294e79652f494130ad2ab00a13fdbafd';
             }
         });
 
-        model.setPostion([0, 0.1, 0.1]);
+        model.setPostion([0, 0.0, 0.0]);
+        model.setScale([0.01, 0.01, 0.01]);
+        model.setAnim({ animName: 'CINEMA_4D_Basis', isLoop: true });
     }
     public static createEngine(canvas: HTMLCanvasElement) {
         return new BABYLON.Engine(canvas, true);

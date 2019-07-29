@@ -97,6 +97,7 @@ export class AppendModelObj implements IModelInstance {
  * * 控制 模型 附加 与 被附加
  * * 控制 模型 变换 - 旋转 缩放 py
  * * 控制 模型 逻辑释放
+ * * 控制 模型 动画速度 - 实现顿帧等效果
  */
 export class InsertModelObj implements IModelInstance {
     public impl: BABYLON.Mesh | undefined;
@@ -132,6 +133,7 @@ export class InsertModelObj implements IModelInstance {
     public readonly particleSysMap: Map<string, BABYLON.ParticleSystem> = new Map();
     public readonly attachOptList: (IModelAttachOpt | undefined)[] = [];
     public readonly childOptList: IModelChildOpt[] = [];
+    private animSpeedCtrl: [string, number] = ['', 1];
     /**
      * 动画执行结束的回调
      */
@@ -370,6 +372,13 @@ export class InsertModelObj implements IModelInstance {
             this.changeAnim();
         }
     }
+    public setAnimSpeed(animName: string, speed: number) {
+        this.animSpeedCtrl[0] = animName;
+        this.animSpeedCtrl[1] = speed;
+        if (this.isLoaded) {
+            this.changeAnimSpeed();
+        }
+    }
     public stopAnim() {
         if (this.isLoaded) {
             this.stopAnimation();
@@ -476,6 +485,11 @@ export class InsertModelObj implements IModelInstance {
         this.stopAnimation();
         if (this.animOpt) {
             this.changeAnimation();
+        }
+    }
+    private changeAnimSpeed() {
+        if ((<BABYLON.AnimationGroup>this.animation) && (<BABYLON.AnimationGroup>this.animation).name === this.animSpeedCtrl[0]) {
+            (<BABYLON.AnimationGroup>this.animation).speedRatio = this.animSpeedCtrl[1];
         }
     }
     /**
