@@ -7,3 +7,6 @@
 * 模型可调整 diffuseColor 额外调整有光照时的效果: 地表接受其他受高亮度光影响的模型的阴影，但地表自身不要高光
 * spectacularColor 设置为黑色 - 取消模型高光部分
 * disableLighting 模型不受光照影响
+
+# 粒子
+* 方向问题 - Unity 基于 +z, BABYLON 基于 +Y
