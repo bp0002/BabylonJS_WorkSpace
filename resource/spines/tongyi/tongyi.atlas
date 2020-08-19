@@ -1,0 +1,411 @@
+
+tongyi.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+14
+  rotate: true
+  xy: 180, 3
+  size: 13, 31
+  orig: 13, 31
+  offset: 0, 0
+  index: -1
+15
+  rotate: true
+  xy: 819, 3
+  size: 126, 120
+  orig: 126, 120
+  offset: 0, 0
+  index: -1
+17
+  rotate: true
+  xy: 986, 339
+  size: 34, 35
+  orig: 34, 35
+  offset: 0, 0
+  index: -1
+18
+  rotate: false
+  xy: 506, 375
+  size: 491, 644
+  orig: 491, 644
+  offset: 0, 0
+  index: -1
+20
+  rotate: true
+  xy: 279, 220
+  size: 128, 225
+  orig: 128, 225
+  offset: 0, 0
+  index: -1
+21
+  rotate: false
+  xy: 941, 3
+  size: 72, 126
+  orig: 72, 126
+  offset: 0, 0
+  index: -1
+22
+  rotate: true
+  xy: 420, 107
+  size: 58, 77
+  orig: 58, 77
+  offset: 0, 0
+  index: -1
+23
+  rotate: false
+  xy: 670, 131
+  size: 314, 242
+  orig: 314, 242
+  offset: 0, 0
+  index: -1
+25
+  rotate: true
+  xy: 213, 4
+  size: 12, 54
+  orig: 12, 54
+  offset: 0, 0
+  index: -1
+26
+  rotate: false
+  xy: 420, 167
+  size: 81, 51
+  orig: 81, 51
+  offset: 0, 0
+  index: -1
+30
+  rotate: false
+  xy: 986, 244
+  size: 34, 33
+  orig: 34, 33
+  offset: 0, 0
+  index: -1
+31
+  rotate: false
+  xy: 279, 6
+  size: 139, 212
+  orig: 139, 212
+  offset: 0, 0
+  index: -1
+32
+  rotate: false
+  xy: 986, 279
+  size: 34, 58
+  orig: 34, 58
+  offset: 0, 0
+  index: -1
+33
+  rotate: false
+  xy: 450, 19
+  size: 41, 86
+  orig: 41, 86
+  offset: 0, 0
+  index: -1
+37
+  rotate: true
+  xy: 122, 2
+  size: 14, 56
+  orig: 14, 56
+  offset: 0, 0
+  index: -1
+40
+  rotate: false
+  xy: 420, 3
+  size: 28, 102
+  orig: 28, 102
+  offset: 0, 0
+  index: -1
+46
+  rotate: false
+  xy: 122, 18
+  size: 155, 330
+  orig: 155, 330
+  offset: 0, 0
+  index: -1
+51
+  rotate: false
+  xy: 506, 6
+  size: 162, 367
+  orig: 162, 367
+  offset: 0, 0
+  index: -1
+52
+  rotate: false
+  xy: 2, 2
+  size: 118, 346
+  orig: 118, 346
+  offset: 0, 0
+  index: -1
+57
+  rotate: false
+  xy: 2, 350
+  size: 502, 669
+  orig: 502, 669
+  offset: 0, 0
+  index: -1
+7
+  rotate: true
+  xy: 670, 2
+  size: 127, 147
+  orig: 127, 147
+  offset: 0, 0
+  index: -1
+
+tongyi2.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 598, 317
+  size: 109, 103
+  orig: 109, 103
+  offset: 0, 0
+  index: -1
+10
+  rotate: false
+  xy: 949, 379
+  size: 70, 68
+  orig: 70, 68
+  offset: 0, 0
+  index: -1
+11
+  rotate: false
+  xy: 949, 449
+  size: 55, 173
+  orig: 55, 173
+  offset: 0, 0
+  index: -1
+12
+  rotate: true
+  xy: 368, 529
+  size: 62, 154
+  orig: 62, 154
+  offset: 0, 0
+  index: -1
+13
+  rotate: false
+  xy: 179, 201
+  size: 222, 222
+  orig: 222, 222
+  offset: 0, 0
+  index: -1
+16
+  rotate: true
+  xy: 2, 114
+  size: 284, 175
+  orig: 284, 175
+  offset: 0, 0
+  index: -1
+19
+  rotate: false
+  xy: 793, 815
+  size: 58, 40
+  orig: 58, 40
+  offset: 0, 0
+  index: -1
+2
+  rotate: true
+  xy: 179, 103
+  size: 96, 228
+  orig: 96, 228
+  offset: 0, 0
+  index: -1
+24
+  rotate: false
+  xy: 703, 311
+  size: 53, 117
+  orig: 53, 117
+  offset: 0, 0
+  index: -1
+27
+  rotate: false
+  xy: 468, 427
+  size: 95, 100
+  orig: 95, 100
+  offset: 0, 0
+  index: -1
+28
+  rotate: false
+  xy: 865, 806
+  size: 135, 199
+  orig: 135, 199
+  offset: 0, 0
+  index: -1
+29
+  rotate: true
+  xy: 172, 2
+  size: 99, 207
+  orig: 99, 207
+  offset: 0, 0
+  index: -1
+3
+  rotate: true
+  xy: 793, 681
+  size: 123, 212
+  orig: 123, 212
+  offset: 0, 0
+  index: -1
+34
+  rotate: true
+  xy: 2, 15
+  size: 97, 168
+  orig: 97, 168
+  offset: 0, 0
+  index: -1
+35
+  rotate: false
+  xy: 758, 403
+  size: 115, 54
+  orig: 115, 54
+  offset: 0, 0
+  index: -1
+36
+  rotate: false
+  xy: 403, 257
+  size: 132, 168
+  orig: 132, 168
+  offset: 0, 0
+  index: -1
+38
+  rotate: false
+  xy: 693, 430
+  size: 61, 117
+  orig: 61, 117
+  offset: 0, 0
+  index: -1
+39
+  rotate: false
+  xy: 362, 427
+  size: 104, 100
+  orig: 104, 100
+  offset: 0, 0
+  index: -1
+4
+  rotate: true
+  xy: 537, 308
+  size: 117, 59
+  orig: 117, 59
+  offset: 0, 0
+  index: -1
+41
+  rotate: false
+  xy: 2, 855
+  size: 457, 150
+  orig: 457, 150
+  offset: 0, 0
+  index: -1
+42
+  rotate: true
+  xy: 758, 352
+  size: 49, 111
+  orig: 49, 111
+  offset: 0, 0
+  index: -1
+43
+  rotate: true
+  xy: 151, 425
+  size: 136, 209
+  orig: 136, 209
+  offset: 0, 0
+  index: -1
+44
+  rotate: false
+  xy: 151, 563
+  size: 215, 290
+  orig: 215, 290
+  offset: 0, 0
+  index: -1
+45
+  rotate: true
+  xy: 537, 251
+  size: 55, 67
+  orig: 55, 67
+  offset: 0, 0
+  index: -1
+47
+  rotate: true
+  xy: 758, 309
+  size: 41, 117
+  orig: 41, 117
+  offset: 0, 0
+  index: -1
+48
+  rotate: true
+  xy: 461, 857
+  size: 148, 402
+  orig: 148, 402
+  offset: 0, 0
+  index: -1
+49
+  rotate: true
+  xy: 793, 624
+  size: 55, 176
+  orig: 55, 176
+  offset: 0, 0
+  index: -1
+5
+  rotate: false
+  xy: 409, 140
+  size: 120, 115
+  orig: 120, 115
+  offset: 0, 0
+  index: -1
+50
+  rotate: false
+  xy: 777, 459
+  size: 170, 163
+  orig: 170, 163
+  offset: 0, 0
+  index: -1
+53
+  rotate: true
+  xy: 532, 549
+  size: 96, 243
+  orig: 96, 243
+  offset: 0, 0
+  index: -1
+54
+  rotate: false
+  xy: 532, 647
+  size: 259, 208
+  orig: 259, 208
+  offset: 0, 0
+  index: -1
+55
+  rotate: true
+  xy: 368, 593
+  size: 260, 162
+  orig: 260, 162
+  offset: 0, 0
+  index: -1
+56
+  rotate: false
+  xy: 2, 400
+  size: 147, 453
+  orig: 147, 453
+  offset: 0, 0
+  index: -1
+6
+  rotate: false
+  xy: 409, 26
+  size: 120, 112
+  orig: 120, 112
+  offset: 0, 0
+  index: -1
+8
+  rotate: true
+  xy: 565, 428
+  size: 119, 126
+  orig: 119, 126
+  offset: 0, 0
+  index: -1
+9
+  rotate: false
+  xy: 875, 383
+  size: 72, 74
+  orig: 72, 74
+  offset: 0, 0
+  index: -1

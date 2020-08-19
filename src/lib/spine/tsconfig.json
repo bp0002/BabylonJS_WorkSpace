@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "noUnusedLocals": true,
+        "noUnusedParameters": true, 
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+		"paths": {
+            "pi_sys/*": ["../pi_sys/src/pi_sys/*"],
+            "pi_utils/*": ["../pi_utils/src/*"],
+			"*": ["src/*"]
+		}
+    },
+    "include": ["src/**/*"]
+}

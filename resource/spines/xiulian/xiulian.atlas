@@ -1,0 +1,146 @@
+
+xiulian.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+10
+  rotate: false
+  xy: 366, 211
+  size: 55, 31
+  orig: 55, 31
+  offset: 0, 0
+  index: -1
+11
+  rotate: true
+  xy: 230, 127
+  size: 80, 103
+  orig: 80, 103
+  offset: 0, 0
+  index: -1
+13
+  rotate: false
+  xy: 743, 364
+  size: 57, 39
+  orig: 57, 39
+  offset: 0, 0
+  index: -1
+14
+  rotate: true
+  xy: 937, 415
+  size: 48, 61
+  orig: 48, 61
+  offset: 0, 0
+  index: -1
+15
+  rotate: false
+  xy: 335, 160
+  size: 43, 47
+  orig: 43, 47
+  offset: 0, 0
+  index: -1
+16
+  rotate: false
+  xy: 448, 327
+  size: 85, 183
+  orig: 85, 183
+  offset: 0, 0
+  index: -1
+17
+  rotate: true
+  xy: 535, 331
+  size: 41, 69
+  orig: 41, 69
+  offset: 0, 0
+  index: -1
+18
+  rotate: false
+  xy: 937, 465
+  size: 70, 45
+  orig: 70, 45
+  offset: 0, 0
+  index: -1
+19
+  rotate: false
+  xy: 154, 7
+  size: 50, 107
+  orig: 50, 107
+  offset: 0, 0
+  index: -1
+20
+  rotate: true
+  xy: 535, 374
+  size: 37, 90
+  orig: 37, 90
+  offset: 0, 0
+  index: -1
+22
+  rotate: false
+  xy: 2, 116
+  size: 226, 206
+  orig: 226, 206
+  offset: 0, 0
+  index: -1
+23
+  rotate: false
+  xy: 535, 413
+  size: 145, 97
+  orig: 145, 97
+  offset: 0, 0
+  index: -1
+24
+  rotate: false
+  xy: 682, 405
+  size: 126, 105
+  orig: 126, 105
+  offset: 0, 0
+  index: -1
+25
+  rotate: true
+  xy: 682, 355
+  size: 48, 59
+  orig: 48, 59
+  offset: 0, 0
+  index: -1
+6
+  rotate: false
+  xy: 2, 2
+  size: 150, 112
+  orig: 150, 112
+  offset: 0, 0
+  index: -1
+7
+  rotate: false
+  xy: 230, 209
+  size: 134, 113
+  orig: 134, 113
+  offset: 0, 0
+  index: -1
+8
+  rotate: false
+  xy: 366, 244
+  size: 59, 78
+  orig: 59, 78
+  offset: 0, 0
+  index: -1
+9
+  rotate: false
+  xy: 627, 359
+  size: 53, 52
+  orig: 53, 52
+  offset: 0, 0
+  index: -1
+tou01
+  rotate: true
+  xy: 810, 418
+  size: 92, 125
+  orig: 92, 125
+  offset: 0, 0
+  index: -1
+tui01
+  rotate: false
+  xy: 2, 324
+  size: 444, 186
+  orig: 444, 186
+  offset: 0, 0
+  index: -1

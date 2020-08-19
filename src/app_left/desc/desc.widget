@@ -1,0 +1,6 @@
+{
+    "forelet": "./desc.ts",
+    "widget": "./desc.ts",
+    "tpl": "./desc.tpl",
+    "cfg": "./desc.cfg"
+}
