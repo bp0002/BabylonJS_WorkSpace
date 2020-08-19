@@ -1,6 +1,6 @@
-import { EngineInstance } from "../../base/engine_instance";
-import { SceneInstance3D, SceneInstance } from "../../base/scene_instance";
-import { AppendModelObj, InsertModelObj } from "../../base/model_instance";
+import { SceneManager } from "../../base/scene";
+import { SceneInstance3D } from "../../base/scene_struct";
+import { InsertModelObj } from "../../base/model_obj";
 
 /**
  * 功能模块
@@ -8,7 +8,6 @@ import { AppendModelObj, InsertModelObj } from "../../base/model_instance";
  */
 export class Index {
     public static canvas: HTMLCanvasElement;
-    public static engine: EngineInstance;
     public static scene: SceneInstance3D;
     /**
      * 初始化时，创建一个简单的完整的场景展示
@@ -20,25 +19,30 @@ export class Index {
      */
     public static init(canvas: HTMLCanvasElement) {
         this.canvas = canvas;
-        this.engine = new EngineInstance('00', canvas);
-        this.engine.active();
-
+        SceneManager.init(canvas);
+        const func = () => {
+            SceneManager.renderLoop();
+            requestAnimationFrame(func);
+        }
+        requestAnimationFrame(func);
         // 创建场景
-        this.scene  = this.engine.createScene3D('test');
+        this.scene  = SceneManager.createScene('test');
 
-        const camera = new BABYLON.TargetCamera('camera1', new BABYLON.Vector3(0, 5, -10), this.scene.scene);
+        const camera = new BABYLON.ArcRotateCamera('camera1', 1, 1, 10, BABYLON.Vector3.Zero(), this.scene.impl);
         camera.setTarget(BABYLON.Vector3.Zero());
         camera.attachControl(canvas, true);
         // 添加相机
         this.scene.addCamera(camera);
         // 设置活动相机
-        this.scene.activeCamera = camera;
+        this.scene.setCurrCamera(camera.name);
         // 可以激活场景
         this.scene.active();
 
+        SceneManager.setMainScene(this.scene);
+
         // 添加灯光
-        const light = new BABYLON.HemisphericLight('light1', new BABYLON.Vector3(0, 1, 0), this.scene.scene);
-        this.scene.addLight('light1', light);
+        const light = new BABYLON.HemisphericLight('light1', new BABYLON.Vector3(0, 1, 0), this.scene.impl);
+        // this.scene.addLight('light1', light);
 
         // // 添加球体
         // const sphere = BABYLON.Mesh.CreateSphere('sphere1', 16, 2, this.scene.scene);
@@ -52,13 +56,13 @@ export class Index {
 
         const model = this.scene.insertMesh('buster_drone', {
             rayID: 1,
-            modelName: null,
+            modelName: undefined,
             path: '../../resource/model/buster_drone/',
             /**
              * 要加载的模型的资源文件名称
              * * 资源文件名称
              */
-            fileName: 'scene.gltf',
+            fileName: 'scene',
             /**
              * 加载成功的回调
              */
